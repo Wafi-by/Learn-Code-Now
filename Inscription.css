@@ -1,0 +1,108 @@
+body {
+  background-image: url('pexels-henry-&-co-1939485.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style pour le logo */
+#logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px;
+  height: auto;
+}
+
+/* Style pour la section d'inscription */
+#inscription-section {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Correction : Utilisation de la balise input pour le checkbox */
+input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #007bb5;
+}
+
+header {
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #3498db;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  background-color: #007bb5;
+  color: white;
+}
+
+

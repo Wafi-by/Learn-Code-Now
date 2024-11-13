@@ -1,0 +1,144 @@
+body {
+  background-image: url('pexels-henry-&-co-1939485.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black; /* Modification de la couleur du texte à noir */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#logo-section {
+  position: relative;
+}
+
+#logo {
+  position: absolute;
+  top: 10px;
+  left: 20px; /* Ajustement pour éloigner le logo du bord */
+  width: 100px;
+  height: auto;
+}
+
+#main-title {
+  text-align: center;
+}
+
+#search-bar {
+  position: absolute;
+  top: 10px;
+  left: 140px; /* Ajustement pour éviter le chevauchement avec le logo */
+}
+
+#search-form {
+  display: flex;
+}
+
+#search-box {
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#search-button:hover {
+  background-color: #007bb5;
+}
+
+#login-section {
+  position: absolute;
+  top: 10px;
+  right: 20px; /* Ajustement pour éloigner le bouton du bord et éviter le chevauchement */
+}
+
+#login-button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+#login-button:hover {
+  background-color: #c0392b;
+}
+
+header, section, #contact, footer {
+  opacity: 0;
+  animation: fadeInUp 2s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+section, #contact {
+  margin: 20px;
+}
+
+nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Modification de la couleur du texte à noir */
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #3498db;
+  transition: background-color 0.3s ease-in-out;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  background-color: #007bb5;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: black; /* Modification de la couleur du texte à noir */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #007bb5;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
