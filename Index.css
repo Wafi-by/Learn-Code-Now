@@ -1,12 +1,10 @@
 body {
-  background-image: url('pexels-henry-&-co-1939485.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color: black; /* Modification de la couleur du texte à noir */
+  background: radial-gradient(circle, rgba(44, 53, 49, 0.9), #116466);
+  color: #D1E8E2;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 #logo-section {
@@ -16,19 +14,27 @@ body {
 #logo {
   position: absolute;
   top: 10px;
-  left: 20px; /* Ajustement pour éloigner le logo du bord */
+  left: 20px;
   width: 100px;
   height: auto;
 }
 
 #main-title {
   text-align: center;
+  color: #FFCBA9;
+  font-size: 2.5em;
+  animation: fadeInTitle 2s forwards;
+}
+
+@keyframes fadeInTitle {
+  0% { opacity: 0; transform: translateY(-50px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 #search-bar {
   position: absolute;
   top: 10px;
-  left: 140px; /* Ajustement pour éviter le chevauchement avec le logo */
+  left: 140px;
 }
 
 #search-form {
@@ -39,36 +45,38 @@ body {
   padding: 10px;
   border: none;
   border-radius: 5px 0 0 5px;
+  background-color: #2C3531;
+  color: #D1E8E2;
 }
 
 #search-button {
   padding: 10px 20px;
-  background-color: #3498db;
-  color: white;
+  background-color: #D9B08C;
+  color: #2C3531;
   border: none;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease;
 }
 
 #search-button:hover {
-  background-color: #007bb5;
+  background-color: #FFCBA9;
 }
 
 #login-section {
   position: absolute;
   top: 10px;
-  right: 20px; /* Ajustement pour éloigner le bouton du bord et éviter le chevauchement */
+  right: 20px;
 }
 
 #login-button {
   padding: 10px 20px;
   background-color: #e74c3c;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease;
   text-decoration: none;
 }
 
@@ -76,16 +84,15 @@ body {
   background-color: #c0392b;
 }
 
+/* Animation des sections */
 header, section, #contact, footer {
   opacity: 0;
   animation: fadeInUp 2s forwards;
 }
 
 @keyframes fadeInUp {
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 section, #contact {
@@ -111,34 +118,21 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: black; /* Modification de la couleur du texte à noir */
+  color: #D1E8E2;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #3498db;
-  transition: background-color 0.3s ease-in-out;
+  background-color: #116466;
+  transition: background-color 0.3s ease;
   display: inline-block;
 }
 
 nav ul li a:hover {
-  background-color: #007bb5;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: black; /* Modification de la couleur du texte à noir */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
-  display: inline-block;
-}
-
-button:hover {
-  background-color: #007bb5;
+  background-color: #2C3531;
 }
 
 footer {
   text-align: center;
-  margin-top: 20px;
+  padding: 20px;
+  background-color: #2C3531;
+  color: #D1E8E2;
 }
